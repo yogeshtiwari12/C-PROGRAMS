@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+  int n,i,j,temp,r;
+  printf("enter n= ");
+  scanf("%d",&n);
+
+
+  for(i=pow(10,n-1);i<pow(10,n);i++){
+    for(j=2;j<=i;j++){
+      if(i%j==0){
+        break;
+      }
+    }
+      if(i==j){
+        printf("%d\n",j);
+      }
+  }
+  }
+
+    
+  
+    
+  
+    
