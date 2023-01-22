@@ -1,0 +1,51 @@
+#include<stdio.h>
+int main(){
+int  n,note,n2;
+printf("enter your money = ");
+scanf("%d",&n);
+printf("enter value of money you want to begin");
+scanf("%d",&note);
+
+switch(note){
+case 100:
+n2 = n/100;
+printf("100 notes are = %d\n",n2);
+n=n%100;
+
+case 50:
+n2 = n/50;
+printf("50 notes are = %d\n",n2);
+n=n%50;
+
+
+case 20:
+n2 = n/20;
+printf("20 notes are = %d\n",n2);
+n=n%20;
+
+case 10:
+n2 = n/10;
+printf("10 notes are = %d\n",n2);
+n=n%10;
+
+case 5:
+n2 = n/5;
+printf("5 notes are = %d\n",n2);
+n =n%5;
+
+case 2:
+n2 = n/2;
+printf("2 notes are = %d\n",n2);
+n = n%2;
+
+case 1:
+n2 = n/1;
+printf("1 notes are = %d\n",n2);
+
+
+
+default : 
+printf("enter valid amount");
+
+}
+}
